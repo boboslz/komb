@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.nav_style{
+    background-color: #021925;
+    /*box-shadow: 0 10px 30px 0;*/
+}
+
+.navbar-brand{
+    width: 80px;
+    height: 50px;
+}
+
+.navbar-nav li a{
+    text-transform: uppercase;
+    font-size: 14px;    
+    color: #9c9c9c;
+    font-weight: 500;
+    letter-spacing: 4px;
+    position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    
+    text-transform: uppercase;
+    font-size: 14px;    
+    color: #9c9c9c;
+    font-weight: 500;
+    letter-spacing: 4px;
+    position: relative;
+}
+
+
+.navbar-nav li a::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    bottom: 50%;
+    width: 0%;
+    height: 3%;
+    background: #95dff5;
+    transition: all 0.3s linear;
+}
+
+.navbar-nav li a:hover::before{
+    width: 80%;
+}
+
+.navbar-nav li a:hover{
+    color:#9c9c9c !important ;
+}
+
+@media (max-width:998px){
+    .navbar-nav{
+        margin: 40px !important;
+        text-align: center !important;
+
+    }
+
+    .navbar-nav li a:hover::before{
+        width: 0%;
+    }
+
+    .card-body{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+section{
+    text-transform: uppercase;
+    font-weight: 900;
+    color:#ffff;
+    text-align: left;
+    margin-bottom: 20px;
+}
+section p {
+    color:#9c9c9c;
+    font-size: 16px;
+    font-weight: 300;
+    margin-right: 40%;
+}
+
+#hero .col{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}  
+
+#hero{
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: -100px;
+    background: url("/kobim/img/bg1.png");
+}
+
+#hero .img-col{
+    justify-content: flex-end;
+    margin-top: 100px;
+}
+
+#hero img{
+    max-width: 130% !important;
+    width: 130%;
+}
+
+
+#heros h1{
+    text-transform: uppercase;
+    text-align: left;
+    font-size:0.8em;
+    margin-bottom: 15px; 
+    letter-spacing: 4px;
+    position: relative;
+    line-height: 60px;
+    color: #000000;
+    font-weight: normal;
+}  
+
+.herosw p{
+    color: #9c9c9c;
+    font-size: 12px;
+    font-weight: 300;
+    margin-right: 30%;
+}
+
+
+.adipiw{
+    color: #9c9c9c;
+    font-size: 12px;
+    font-weight: 300;
+    width: 130%;
+}
+
+
+.fundoazul{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url("/kobim/img/bg2.png");
+    padding-bottom: 40px;
+}
+
+#adipi h1{
+    margin-top: 120px;
+    margin-right: 40%;
+    text-transform: uppercase;
+    color: black;
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    position: relative;
+    font-size: 120px;
+    width: 100%;
+}
+
+.super{
+    margin-left: 360px;
+    margin-right: 360px;
+}
+
+#hero .card{
+    box-shadow: 11px 7px 16px #f9f9f9;
+    border: 0;
+    text-align: center;
+    margin-left: 120px;
+    margin-right: 120px;
+}
